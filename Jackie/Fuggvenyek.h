@@ -37,19 +37,6 @@ Adatok* add(Adatok* adat, Jackie beolvasott)
 	return temp;
 
 }
-Jackie adat(char* szoveg)
-{
-	char* split = strtok(szoveg, "\t");
-	Jackie temp; temp.year = atoi(split);
-	split = strtok(NULL, "\t"); temp.races = atoi(split);
-	split = strtok(NULL, "\t"); temp.wins = atoi(split);
-	split = strtok(NULL, "\t"); temp.podium = atoi(split);
-	split = strtok(NULL, "\t"); temp.poles = atoi(split);
-	split = strtok(NULL, "\t"); temp.fastests = atoi(split);
-	return temp;
-
-
-}
 void torles(Adatok* elso)
 {
 	Adatok* elem, * temp;
