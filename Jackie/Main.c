@@ -78,14 +78,14 @@ int main()
 	fputs("<meta charset='UTF-8'>", kiiras);
 	fputs("<meta http-equiv='X-UA-Compatible' content='IE=edge'>", kiiras);
 	fputs("<meta name='viewport' content='width=device-width, initial-scale=1.0'>", kiiras);
-	fputs("<title>Jackie Stewart<\title>", kiiras);
+	fputs("<title>Jackie Stewart</title>", kiiras);
 	fputs("<style>\ntable, tr, td{ border: 1px solid black; }\n</style>", kiiras);
 	fputs("</head><body>", kiiras);
 	fputs("<h1>Jackie Stewart</h1>", kiiras);
 	fputs("<table>", kiiras);
 	for (size_t i = 0; i < szamlalo; i++)
-		fprintf(kiiras, "<tr>\n<td>%d<\td>\n<td>%d<\td>\n<td>%d<\td>\n<\tr>\n", adatok[i].year, adatok[i].races, adatok[i].wins);
-	fputs("<\table>", kiiras);
+		fprintf(kiiras, "<tr>\n<td>%d</td>\n<td>%d</td>\n<td>%d</td>\n</tr>\n", adatok[i].year, adatok[i].races, adatok[i].wins);
+	fputs("</table>", kiiras);
 	fputs("</body></html>", kiiras);
 	fclose(kiiras);
 	getch();
